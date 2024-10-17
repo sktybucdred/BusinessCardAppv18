@@ -12,9 +12,9 @@ export class ManageInterestsComponent {
   @Input() interestList: string[] | undefined;
   @Output() selectInterestInParent: EventEmitter<number> = new EventEmitter();
   @Input() selected: number | undefined;
-  
 
   selectInterestInChild(which:number):void{
     this.selectInterestInParent.emit(which);
   }
+
 }
